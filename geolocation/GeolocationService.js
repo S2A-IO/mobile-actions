@@ -6,8 +6,6 @@
 
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
-declare var google;
-
 export class GeolocationService {
 
   /**
