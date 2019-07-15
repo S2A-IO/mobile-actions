@@ -13,15 +13,12 @@ const DEFAULT_LIMIT = 1;
 
 export class CameraCaptureAction extends IClientAction {
 
-  private _camera: Camera;
-  private _mediaCapture: MediaCapture;
-
   /**
    * Camera does not depend on the number of documents being processed.
    *
    * @returns {boolean} p                   Whether we should loop for document.
    */
-  loop(): boolean {
+  loop() {
     return false;
   }
 
@@ -45,7 +42,7 @@ export class CameraCaptureAction extends IClientAction {
    *
    * @returns {any} p                   Promise for action completion.
    */
-  exec( doc: any, params: any, extras: any ): any {
+  exec( doc, params, extras ) {
     return this.takeMedia( doc, params.key, params.options );
   }
 
@@ -58,7 +55,7 @@ export class CameraCaptureAction extends IClientAction {
    *
    * @returns {any} p                   Promise for action completion.
    */
-  takeMedia( doc: any, key: string, options: any ) {
+  takeMedia( doc, key, options ) {
     let me = this;
 
     // Get the media data

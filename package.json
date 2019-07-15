@@ -20,5 +20,8 @@
     "@ionic-native/location-accuracy": "5.10.0",
     "@ionic-native/media-capture": "5.10.0",
     "@ionic/angular": "4.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
   }
 }
