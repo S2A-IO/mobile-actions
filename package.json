@@ -1,5 +1,5 @@
 {
-  "name": "s2a-mobile-actions",
+  "name": "@s2a/mobile-actions",
   "version": "1.0.0",
   "description": "S2A mobile specific actions",
   "main": "index.js",
