@@ -1,0 +1,24 @@
+{
+  "name": "s2a-mobile-actions",
+  "version": "1.0.0",
+  "description": "S2A mobile specific actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "bluebird": "3.4.7",
+    "@angular/core": "8.1.1",
+    "@ionic-native/android-permissions": "5.10.0",
+    "@ionic-native/background-mode": "5.10.0",
+    "@ionic-native/barcode-scanner": "5.10.0",
+    "@ionic-native/camera": "5.10.0",
+    "@ionic-native/fcm": "5.10.0",
+    "@ionic-native/geolocation": "5.10.0",
+    "@ionic-native/location-accuracy": "5.10.0",
+    "@ionic-native/media-capture": "5.10.0",
+    "@ionic/angular": "4.6.2"
+  }
+}
