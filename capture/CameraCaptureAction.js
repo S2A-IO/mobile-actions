@@ -64,12 +64,12 @@ export class CameraCaptureAction extends IClientAction {
         limit: DEFAULT_LIMIT
       };
       videoOptions = Object.assign( videoOptions, options );
-      return this._mediaCapture.captureVideo( videoOptions ).then( function AfterMediaFile( mediafile: any[] ) {
+      return this._mediaCapture.captureVideo( videoOptions ).then( function AfterMediaFile( mediafile ) {
         if ( videoOptions.limit === 1 ) return me.setKeyValue( doc, key, mediafile[0] );
         return me.setKeyValue( doc, key, mediafile );
       });
     } else {
-      return this._camera.getPicture( options ).then( function AfterImageFile( imageData: string ) {
+      return this._camera.getPicture( options ).then( function AfterImageFile( imageData ) {
         if ( options.destinationType == me._camera.DestinationType.DATA_URL ) {
           imageData = BASE64_PREFIX + imageData;
         }
